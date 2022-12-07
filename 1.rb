@@ -1,8 +1,8 @@
 print "Пожалуйста введите Ваше имя: "
-Name = gets.chomp
+name = gets.chomp
 print "Пожалуйста введите Ваше отчество: "
-Patronymic = gets.chomp
+patron = gets.chomp
 print "Пожалуйста введите Вашу фамилию: "
-LastName = gets.chomp
-puts "Приветствую Вас, #{Name} #{Patronymic} #{LastName} !"
+l_name = gets.chomp
+puts "Приветствую Вас, #{name} #{patron} #{l_name} !"
 gets()
