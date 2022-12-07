@@ -1,4 +1,4 @@
 print "сколько вы прожили секунд? "
-Num = (gets.chomp.to_i+1)/(60**2)/24/365.3
+Num = (gets.chomp.to_i)/31556926
 puts "#{Num.to_i} лет? А по вам и не скажешь!"
 gets()
