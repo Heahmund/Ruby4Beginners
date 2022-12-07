@@ -1,10 +1,6 @@
-print "сколько вы прожили секунд? "
-var1 = (gets.chomp.to_i)
-var2 = Time.now
-birth = var2 - var1
-goal = Time.at(var2).year - Time.at(birth).year
-if var2.yday <= birth.yday
-goal += 1
-end
-puts "Вы родились #{Time.at(birth)}? получается вам #{goal}! А по вам и не скажешь!"
+print "Cколько вы прожили секунд? "
+sum = Time.at(Time.now-(gets.chomp.to_i))
+goal = Time.at(Time.now).year - sum.year
+goal -=1 if Time.now.yday < (sum).yday
+puts "Вы родились #{sum}? Получается вам #{goal}! А по вам и не скажешь!"
 gets()
